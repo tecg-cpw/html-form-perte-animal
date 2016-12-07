@@ -1,0 +1,71 @@
+body {
+	background-color: rgb(255,215,0);
+	font-family : georgia, verdana;
+}
+
+div.row {
+ 	clear: both;
+	padding: 0.5em;
+ }
+
+div.row>label:first-child{
+ 	float: left;
+ 	width: 15em;
+ 	text-align: right;
+ 	margin-right:0.5em;
+ }
+
+div.row span.formw {
+	margin-left: 0.5em;
+}
+
+.gender {
+clear: both;
+margin-left: 13.5em;
+}
+
+
+h1 {
+	text-align : center;
+}
+
+h1, legend {
+	color :  #465866;
+	font-weight : bold;
+}
+fieldset {
+	margin-top: 0.5em;
+}
+
+h1:first-letter, legend:first-letter{
+	font-style : italic;
+	font-size : 150%;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+	background-color:  #465866;
+	color: white;
+}
+
+#validation input {
+	float: right;
+	background-color:  #465866;
+	color: gold;
+	margin:0.5em;
+	font-size: 100%;
+}
+
+#validation input:hover {
+	border-style : inset;
+	color: white;
+	background-color:  #465866;
+}
+
+.info {
+	font-size: 80%;
+}
+
+.validForm
+{
+text-align: right;
+}
