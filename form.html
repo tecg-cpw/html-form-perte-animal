@@ -9,46 +9,97 @@ ATTENTION nouv input a utiliser et nouv attributs
 
 	<!-- meta elements -->
 	<meta charset="utf-8" />
-	<meta name="author" content="TECG-CPW" />
-	<meta name="description" content="Formulaire de déclaration de perte d’un animal" />
-	<meta name="keywords" content="HTML5, form, animal" />
+	<meta
+		name="author"
+		content="TECG-CPW"
+	/>
+	<meta
+		name="description"
+		content="Formulaire de déclaration de perte d’un animal"
+	/>
+	<meta
+		name="keywords"
+		content="HTML5, form, animal"
+	/>
 
 	<title>Déclaration de perte d’un animal</title>
 
-	<link media="screen" rel="stylesheet" href="./css/styles.css" />
+	<link
+		media="screen"
+		rel="stylesheet"
+		href="./css/styles.css"
+	/>
 
 </head>
 
 <body>
-	<h1 role="heading" aria-level="1">Déclaration de perte d’un animal</h1>
+	<h1
+		role="heading"
+		aria-level="1"
+	>Déclaration de perte d’un animal</h1>
 
-	<form name="form1" method="post" action="http://10.59.26.130/~user22/form/form.php" enctype="multipart/form-data">
-		<p id="symbole"> * pour les champs obligatoires </p>
+	<form
+		id="form1"
+		method="post"
+		action="/form.php"
+		enctype="multipart/form-data"
+	>
+		<p id="symbole"> <abbr title="astérisque">*</abbr> pour les champs obligatoires&nbsp;!</p>
 
 		<fieldset>
 			<legend>Vos coordonnées</legend>
 			<div class="row">
-				<label for="email">* Adresse email </label>
-				<input type="email" name="email" id="email" size="40" maxlength="60" required="required"
-					autofocus="autofocus" title="Entrez votre adresse mail" placeholder="xyz@example.com" />
+				<label for="email"><abbr title="astérisque">*</abbr> Adresse email </label>
+				<input
+					type="email"
+					name="email"
+					id="email"
+					size="40"
+					maxlength="60"
+					required
+					autofocus="autofocus"
+					title="Entrez votre adresse mail"
+					placeholder="xyz@example.com"
+				>
 			</div>
 			<div class="row">
-				<label for="vemail">* Vérification Adresse email </label>
-				<input type="email" name="vemail" id="vemail" size="40" maxlength="60" required="required"
-					title="Réentrez votre adresse mail pour vérification" placeholder="xyz@example.com" />
+				<label for="vemail"><abbr title="astérisque">*</abbr> Vérification de l’adresse email </label>
+				<input
+					type="email"
+					name="vemail"
+					id="vemail"
+					size="40"
+					maxlength="60"
+					required
+					title="Réentrez votre adresse mail pour vérification"
+					placeholder="xyz@example.com"
+				>
 			</div>
 			<div class="row">
 				<label for="tel">Téléphone</label>
-				<input type="tel" name="tel" id="tel" size="20" maxlength="20"
+				<input
+					type="tel"
+					name="tel"
+					id="tel"
+					size="20"
+					maxlength="20"
 					title="Entrez votre numéro de téléphone fixe ou votre numéro de portable"
-					placeholder="0499/10 10 10" />
+					placeholder="0499 10 10 10"
+				>
 			</div>
 			<div class="row">
-				<label for="pays">Pays</label>
-				<select name="pays" id="pays" size="1">
-					<option value="BE" selected="selected">Belgique</option>
-					<option value="FR">France</option>
-					<option value="LU">Luxembourg</option>
+				<label for="country">Pays</label>
+				<select
+					name="country"
+					id="country"
+					size="1"
+				>
+					<option
+						value="be"
+						selected="selected"
+					>Belgique</option>
+					<option value="fr">France</option>
+					<option value="lu">Luxembourg</option>
 				</select>
 			</div>
 		</fieldset> <!-- Vos coordonnées -->
@@ -56,40 +107,77 @@ ATTENTION nouv input a utiliser et nouv attributs
 		<fieldset>
 			<legend>Description de l’animal perdu</legend>
 			<div class="row">
-				<label for="typeAnimal">Type d’animal</label>
-				<select name="typeAnimal" id="typeAnimal" size="1">
-					<option value="Chien">Chien</option>
-					<option value="Chat">Chat</option>
+				<label for="animal-type">Type d’animal</label>
+				<select
+					name="animal-type"
+					id="animal-type"
+					size="1"
+				>
+					<option value="dog">Chien</option>
+					<option value="cat">Chat</option>
 				</select>
 			</div>
 
 			<div class="row">
-				<label for="nomAnimal">* Nom de l’animal </label>
-				<input type="text" name="nomAnimal" id="nomAnimal" size="40" maxlength="40" required="required"
-					title="Entrez le nom de l’animal" placeholder="Rex" />
+				<label for="animal-name"><abbr title="astérisque">*</abbr> Nom de l’animal </label>
+				<input
+					type="text"
+					name="animal-name"
+					id="animal-name"
+					size="40"
+					maxlength="40"
+					required
+					title="Entrez le nom de l’animal"
+					placeholder="Rex"
+				>
 			</div>
 
 			<div class="row">
-				<label for="puce">(Obligatoire pour chien) Puce</label>
-				<input type="text" name="puce" id="puce" size="15" maxlength="15"
-					title="Entrez l’identification de la puce de l’animal" placeholder="123456789012345" />
+				<label for="chip">(Obligatoire pour chien) Puce</label>
+				<input
+					type="text"
+					name="chip"
+					id="chip"
+					size="15"
+					maxlength="15"
+					title="Entrez l’identification de la puce de l’animal"
+					placeholder="123456789012345"
+				>
 			</div>
 
 			<div class="gender">
 				Sexe
-				<label for="F">
-					<input type="radio" name="sexe" id="F" value="F" /> Femelle
+				<label for="female">
+					<input
+						type="radio"
+						name="sexe"
+						id="female"
+						value="female"
+					> Femelle
 				</label>
-				<label for="M">
-					<input type="radio" name="sexe" id="M" value="M" checked="checked" /> Mâle
+				<label for="male">
+					<input
+						type="radio"
+						name="sexe"
+						id="male"
+						value="male"
+						checked
+					> Mâle
 				</label>
 			</div>
 
 
 			<div class="row">
 				<label for="age">Age (estimation)</label>
-				<input type="number" name="age" id="age" min="0" max="150" title="Entrez l’age aproximatif de l’animal"
-					placeholder="5" />
+				<input
+					type="number"
+					name="age"
+					id="age"
+					min="0"
+					max="150"
+					title="Entrez l’age aproximatif de l’animal"
+					placeholder="5"
+				>
 				<span class="info">(nombre d'années)</span>
 
 			</div>
@@ -97,36 +185,67 @@ ATTENTION nouv input a utiliser et nouv attributs
 
 			<div class="row">
 				<label for="race">Race</label>
-				<input type="text" name="race" id="race" list="races" size="40" maxlength="40"
-					title="Entrez la race de l’animal" placeholder="Caniche" />
+				<input
+					type="text"
+					name="race"
+					id="race"
+					list="races"
+					size="40"
+					maxlength="40"
+					title="Entrez la race de l’animal"
+					placeholder="Caniche"
+				>
 				<datalist id="races">
-					<option value="Basset">Basset</option>
-					<option value="Beagle">Beagle</option>
-					<option value="Bichon">Bichon</option>
-					<option value="Caniche">Caniche</option>
-					<option value="Épagneul">Épagneul</option>
+					<option value="basset">Basset</option>
+					<option value="beagle">Beagle</option>
+					<option value="bichon">Bichon</option>
+					<option value="poodle">Caniche</option>
+					<option value="spaniel">Épagneul</option>
 				</datalist>
 			</div>
 
 			<div class="row">
-				<label for="tatouage">Tatouage</label>
-				<select name="tatoue" id="tatoue" size="1" title="Choisir l’endroit du tatouage">
-					<option value="Oreille gauche">Oreillle gauche</option>
-					<option value="Oreille droite">Oreille droite</option>
-					<option value="Cuisse gauche">Cuisse gauche</option>
-					<option value="Cuisse droite">Cuisse droite</option>
+				<label for="tatoo">Tatouage</label>
+				<select
+					name="tatoo"
+					id="tatoo"
+					size="1"
+					title="Choisir l’endroit du tatouage"
+				>
+					<option value="left-ear">Oreille gauche</option>
+					<option value="right-ear">Oreille droite</option>
+					<option value="left-tigh">Cuisse gauche</option>
+					<option value="right-tigh">Cuisse droite</option>
 				</select>
-				<input type="text" name="tatouage" id="tatouage" size="6" maxlength="6"
-					title="Entrez le tatouage de l’animal" placeholder="B999AA" />
+				<label for="tatoo-code">Code du tatouage</label>
+				<input
+					type="text"
+					name="tatoo-code"
+					id="tatoo-code"
+					size="6"
+					maxlength="6"
+					title="Entrez le tatouage de l’animal"
+					placeholder="B999AA"
+				>
 			</div>
 			<div class="row">
-				<label for="description">Description / Signe(s) particulier(s)</label><textarea id="description"
-					name="description" cols="50" rows="4"></textarea>
+				<label for="description">Description / Signe(s) particulier(s)</label>
+				<textarea
+					id="description"
+					name="description"
+					cols="50"
+					rows="4"
+				></textarea>
 			</div>
 			<div class="row">
-				<label for="photoAnimal">Photo de l’animal</label>
-				<input type="file" name="photoAnimal" id="photoAnimal" size="50"
-					accept="image/gif, image/jpg, image/png" />
+				<label for="animal-photo">Photo de l’animal</label>
+				<input
+					type="file"
+					name="animal-photo"
+					id="animal-photo"
+					size="50"
+					accept="image/gif, image/jpg, image/png"
+				>
 			</div>
 
 		</fieldset> <!-- Description de l’animal perdu -->
@@ -134,35 +253,65 @@ ATTENTION nouv input a utiliser et nouv attributs
 		<fieldset>
 			<legend>Date et localité de la perte</legend>
 			<div class="row">
-				<label for="dateDisparition">Date </label>
+				<label for="disparition-date">Date</label>
 				<!--not suported by FF-->
-				<input type="date" id="dateDisparition" name="dateDisparition" title="Entrez la date de la disparition"
-					placeholder="2000-02-24" />
-				<span class="info">(année - mois - jour ou sélection calendrier)</span>
+				<input
+					type="date"
+					id="disparition-date"
+					name="disparition-date"
+					title="Entrez la date de la disparition"
+					placeholder="2000-02-24"
+				>
+				<span class="info">(année - mois - jour <em>ou</em> sélection calendrier)</span>
 			</div>
 			<div class="row">
-				<label for="heureDisparition">Heure </label>
-				<input type="time" id="heureDisparition" name="heureDisparition"
-					title="Entrez l’heure de la disparition" placeholder="10:30" />
+				<label for="disparition-time">Heure</label>
+				<input
+					type="time"
+					id="disparition-time"
+					name="disparition-time"
+					title="Entrez l’heure de la disparition"
+					placeholder="10:30"
+				>
 				<span class="info">(heure : minute ou sélection de l’heure)</span>
 			</div>
 			<div class="row">
-				<label for="codePostal">Code postal</label>
-				<input type="text" id="codePostal" name="codePostal"
-					title="Entrez le code postal de la localité où a eu lieu la perte de l’animal" size="5"
-					maxlength="5" placeholder="4000" />
+				<label for="postal-code">Code postal</label>
+				<input
+					type="text"
+					id="postal-code"
+					name="postal-code"
+					title="Entrez le code postal de la localité où a eu lieu la perte de l’animal"
+					size="5"
+					maxlength="5"
+					placeholder="4000"
+				>
 			</div>
 			<div class="row">
-				<label for="paysDisp">Pays</label>
-				<select name="paysDisp" id="paysDisp" size="1">
-					<option value="BE" selected="selected">Belgique</option>
-					<option value="FR">France</option>
-					<option value="LU">Luxembourg</option>
+				<label for="disparition-country">Pays</label>
+				<select
+					name="disparition-country"
+					id="disparition-country"
+					size="1"
+				>
+					<option
+						value="be"
+						selected="selected"
+					>Belgique</option>
+					<option value="fr">France</option>
+					<option value="lu">Luxembourg</option>
 				</select>
 			</div>
 			<div class="row validForm">
-				<input type="reset" value="Initialiser le formulaire" />
-				<input type="submit" value="Enregistrer la perte" />
+				<input
+					type="reset"
+					class="warning"
+					value="Supprimer les informations entrées dans le formulaire"
+				>
+				<input
+					type="submit"
+					value="Déclarer la disparition"
+				>
 			</div>
 		</fieldset> <!-- validation -->
 	</form>
