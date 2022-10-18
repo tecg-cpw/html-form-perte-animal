@@ -382,8 +382,11 @@ template {
 My Styles
 */
 
+html{
+	background: white;
+}
+
 body {
-	background-color: rgba(0, 0, 100, 0.01);
 	font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 	max-width: 50em;
 	margin: 0 auto 2em auto;
@@ -451,7 +454,10 @@ textarea{
 }
 
 select, input[type=file]{
+	border-radius: 0.5em;
+	border: 1px solid rgba(0, 0, 100, 0.08);
 	margin-left: 0.5em;
+	padding: 0.3rem;
 	background: rgba(100,100,200,0.8);
 	color:whitesmoke;
 }
