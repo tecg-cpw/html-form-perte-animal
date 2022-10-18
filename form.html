@@ -44,7 +44,10 @@ ATTENTION nouv input a utiliser et nouv attributs
 		action="/form.php"
 		enctype="multipart/form-data"
 	>
-		<p id="symbole"> <abbr title="astérisque">*</abbr> pour les champs obligatoires&nbsp;!</p>
+		<p
+			id="symbol"
+			class="minimized"
+		> <abbr title="astérisque">*</abbr> pour les champs obligatoires&nbsp;!</p>
 
 		<fieldset>
 			<legend>Vos coordonnées</legend>
@@ -145,25 +148,27 @@ ATTENTION nouv input a utiliser et nouv attributs
 				>
 			</div>
 
-			<div class="gender">
-				Sexe
+			<div class="row radio-set">
+				<span class="radio-set-label">Sexe</span>
 				<label for="female">
-					<input
-						type="radio"
-						name="sexe"
-						id="female"
-						value="female"
-					> Femelle
+					Femelle
 				</label>
+				<input
+					type="radio"
+					name="sexe"
+					id="female"
+					value="female"
+				>
 				<label for="male">
-					<input
-						type="radio"
-						name="sexe"
-						id="male"
-						value="male"
-						checked
-					> Mâle
+					Mâle
 				</label>
+				<input
+					type="radio"
+					name="sexe"
+					id="male"
+					value="male"
+					checked
+				>
 			</div>
 
 
@@ -302,18 +307,20 @@ ATTENTION nouv input a utiliser et nouv attributs
 					<option value="lu">Luxembourg</option>
 				</select>
 			</div>
-			<div class="row validForm">
-				<input
-					type="reset"
-					class="warning"
-					value="Supprimer les informations entrées dans le formulaire"
-				>
-				<input
-					type="submit"
-					value="Déclarer la disparition"
-				>
-			</div>
+
 		</fieldset> <!-- validation -->
+		<div class="row form-actions">
+			<input
+				type="reset"
+				class="warning"
+				value="Supprimer les informations entrées dans le formulaire"
+			>
+			<input
+				type="submit"
+				class="valid"
+				value="Déclarer la disparition"
+			>
+		</div>
 	</form>
 </body>
 
