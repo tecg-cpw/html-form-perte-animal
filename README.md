@@ -13,6 +13,7 @@ Créer le document index.html avec le formulaire suivant :
 - chaque label est lié à son champ
 - le premier champ obtient automatiquement le focus
 - les noms des champs sont dans l’ordre : *email*, *vemail*, *tel*, *country*; *animal-type*, *animal-name*, *chip*, *gender*, *age*, *race*, *tatoo*, *tatoo-code*, *description*, *animal-photo*; *disparition-date*, *disparition-time*, *postal-code* et *disparition-country*
+- s'il est envoyé avec la méthode GET, la query string est : https://tecg-cpw.github.io/form.php?email=dominique.vilain%40hepl.be&vemail=dominique.vilain%40hepl.be&tel=04+279+76+16&country=be&animal-type=dog&animal-name=Rex&chip=12345678&gender=male&age=2&race=poodle&tatoo=left-ear&tatoo-code=B999AA&description=IL+est+beau&animal-photo=&disparition-date=2024-12-12&disparition-time=12%3A30&postal-code=4000&disparition-country=be (notez que le fichier n’y est pas puisque la méthode GET ne permet pas d’envoyer un fichier)
 - veillez à bien respecter le caractère obligatoire des champs marqués d’une astérisque (*)
 - veillez à bien respecter tous les *placeholders*
 - veillez à utiliser pour chaque champ un attribut title adéquat (info-bulle explicite qui renseigne l’Internaute sur l’information à entrer)
