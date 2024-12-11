@@ -1,5 +1,5 @@
 # Les formulaires
-Créer le document index.html avec le formulaire suivant :
+Créer le document [index.html](https://tecg-cpw.github.io/html-form-perte-animal/) avec le formulaire suivant :
 
 ![Rendu de la page avec CSS](./img/rendu.webp "rendu avec CSS de la solution" )
 
